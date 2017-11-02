@@ -1,0 +1,9 @@
+﻿  gl3w.c
+  main.cpp
+  imgui_impl_glfw_gl3.cpp
+  imgui_draw.cpp
+  imgui_demo.cpp
+  imgui.cpp
+  Generating Code...
+  studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.exe
+  studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.pdb (Full PDB)
