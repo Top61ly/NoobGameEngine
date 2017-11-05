@@ -81,7 +81,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\;$(SolutionDir)Dependencies\include\ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\libs\glfw\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>msvcrt.lib</ModuleDefinitionFile>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -112,6 +118,10 @@
   <ItemGroup>
     <ClInclude Include="..\src\engine\Iplugin.h" />
     <ClInclude Include="..\src\engine\noob.h" />
+    <ClInclude Include="window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,6 +4,9 @@
     <Filter Include="src">
       <UniqueIdentifier>{c46f1f6a-ebbb-4537-886e-eb2d1641accd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\graphics">
+      <UniqueIdentifier>{ca9a61eb-4758-415a-bb81-4424ab2976ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\engine\noob.h">
@@ -12,5 +15,13 @@
     <ClInclude Include="..\src\engine\Iplugin.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>src\graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="window.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
