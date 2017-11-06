@@ -3,8 +3,9 @@ f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\vc140.idb
 f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\imgui.obj
 f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\imgui_demo.obj
 f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\imgui_draw.obj
-f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\imgui_impl_glfw_gl3.obj
 f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\main.obj
+f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\sprite.obj
+f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\texture.obj
 f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\window.obj
 f:\#mygithub\noobgameengine\noobgameengine\x64\debug\studio.pdb
 f:\#mygithub\noobgameengine\noobgameengine\studio\x64\debug\studio.tlog\cl.command.1.tlog

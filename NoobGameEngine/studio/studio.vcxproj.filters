@@ -7,9 +7,6 @@
     <Filter Include="Dependencies">
       <UniqueIdentifier>{c7d84023-1879-4982-8cbc-158b9491caed}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Dependencies\SOIL">
-      <UniqueIdentifier>{e755da7b-719d-46bb-b6f8-c992729fd307}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Dependencies\imgui">
       <UniqueIdentifier>{7aefa512-4566-4f76-a53c-a44df351c0c6}</UniqueIdentifier>
     </Filter>
@@ -31,21 +28,6 @@
       <Filter>Dependencies\imgui</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="..\Dependencies\include\SOIL\image_DXT.c">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Dependencies\include\SOIL\image_helper.c">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Dependencies\include\SOIL\SOIL.c">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Dependencies\include\SOIL\stb_image_aug.c">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Dependencies\include\SOIL\test_SOIL.cpp">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClCompile>
     <ClCompile Include="src\texture.cpp">
       <Filter>graphics</Filter>
     </ClCompile>
@@ -71,24 +53,6 @@
     </ClInclude>
     <ClInclude Include="..\Dependencies\include\ImGui\imgui_internal.h">
       <Filter>Dependencies\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Dependencies\include\SOIL\image_DXT.h">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Dependencies\include\SOIL\image_helper.h">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Dependencies\include\SOIL\SOIL.h">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Dependencies\include\SOIL\stb_image_aug.h">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Dependencies\include\SOIL\stbi_DDS_aug.h">
-      <Filter>Dependencies\SOIL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Dependencies\include\SOIL\stbi_DDS_aug_c.h">
-      <Filter>Dependencies\SOIL</Filter>
     </ClInclude>
     <ClInclude Include="src\texture.h">
       <Filter>graphics</Filter>

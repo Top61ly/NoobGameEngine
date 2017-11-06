@@ -15,9 +15,12 @@ public:
 	Sprite(string imagePath);
 	Sprite(string imagePath, float xPos, float yPos);
 
+	void Update();
+	void Render();
+
 private:
-	Texture texture;
-	float xPos;
-	float yPos;
+	Texture m_Texture;
+	float m_XPos;
+	float m_YPos;
 
 };

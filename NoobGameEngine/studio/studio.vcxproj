@@ -84,7 +84,7 @@
       <AdditionalIncludeDirectories>$(ProjectDir)src\;$(SolutionDir)Dependencies\include\;$(SolutionDir)Dependencies\include\ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\libs\SOIL\;$(SolutionDir)Dependencies\libs\glfw\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\libs\SOIL;$(SolutionDir)Dependencies\libs\glfw\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -121,11 +121,6 @@
     <ClCompile Include="..\Dependencies\include\ImGui\imgui.cpp" />
     <ClCompile Include="..\Dependencies\include\ImGui\imgui_demo.cpp" />
     <ClCompile Include="..\Dependencies\include\ImGui\imgui_draw.cpp" />
-    <ClCompile Include="..\Dependencies\include\SOIL\image_DXT.c" />
-    <ClCompile Include="..\Dependencies\include\SOIL\image_helper.c" />
-    <ClCompile Include="..\Dependencies\include\SOIL\SOIL.c" />
-    <ClCompile Include="..\Dependencies\include\SOIL\stb_image_aug.c" />
-    <ClCompile Include="..\Dependencies\include\SOIL\test_SOIL.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\sprite.cpp" />
     <ClCompile Include="src\texture.cpp" />
@@ -137,12 +132,6 @@
     <ClInclude Include="..\Dependencies\include\ImGui\imconfig.h" />
     <ClInclude Include="..\Dependencies\include\ImGui\imgui.h" />
     <ClInclude Include="..\Dependencies\include\ImGui\imgui_internal.h" />
-    <ClInclude Include="..\Dependencies\include\SOIL\image_DXT.h" />
-    <ClInclude Include="..\Dependencies\include\SOIL\image_helper.h" />
-    <ClInclude Include="..\Dependencies\include\SOIL\SOIL.h" />
-    <ClInclude Include="..\Dependencies\include\SOIL\stbi_DDS_aug.h" />
-    <ClInclude Include="..\Dependencies\include\SOIL\stbi_DDS_aug_c.h" />
-    <ClInclude Include="..\Dependencies\include\SOIL\stb_image_aug.h" />
     <ClInclude Include="src\sprite.h" />
     <ClInclude Include="src\texture.h" />
     <ClInclude Include="src\window.h" />

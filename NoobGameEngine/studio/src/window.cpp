@@ -139,6 +139,7 @@ namespace graphics
 	{
 		ImGui::SetNextWindowPos(ImVec2(650, 20), ImGuiCond_FirstUseEver);
 		ImGui::ShowTestWindow();
+		ImGui::Render();
 	}
 
 	bool Window::Init()
@@ -186,7 +187,6 @@ namespace graphics
 
 
 		OnGui();
-		ImGui::Render();
 		glfwSwapBuffers(m_Window);
 	}
 
