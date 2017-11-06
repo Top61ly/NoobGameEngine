@@ -4,51 +4,100 @@
     <Filter Include="src">
       <UniqueIdentifier>{66cf0df0-2e1d-4261-a6e6-9f684caf0b47}</UniqueIdentifier>
     </Filter>
-    <Filter Include="gl3w">
-      <UniqueIdentifier>{82b92066-a007-4dd5-9105-86f3d0487e86}</UniqueIdentifier>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{c7d84023-1879-4982-8cbc-158b9491caed}</UniqueIdentifier>
     </Filter>
-    <Filter Include="imgui">
+    <Filter Include="Dependencies\SOIL">
+      <UniqueIdentifier>{e755da7b-719d-46bb-b6f8-c992729fd307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\imgui">
       <UniqueIdentifier>{7aefa512-4566-4f76-a53c-a44df351c0c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dependencies\gl3w">
+      <UniqueIdentifier>{82b92066-a007-4dd5-9105-86f3d0487e86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{6341012f-1a48-4ab1-bc89-cdc1535dcf61}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Dependencies\include\ImGui\imgui_impl_glfw_gl3.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\studio\main.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Dependencies\include\GL\gl3w.c">
-      <Filter>gl3w</Filter>
-    </ClCompile>
     <ClCompile Include="..\Dependencies\include\ImGui\imgui.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Dependencies\imgui</Filter>
     </ClCompile>
     <ClCompile Include="..\Dependencies\include\ImGui\imgui_demo.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Dependencies\imgui</Filter>
     </ClCompile>
     <ClCompile Include="..\Dependencies\include\ImGui\imgui_draw.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="..\Dependencies\include\SOIL\image_DXT.c">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\include\SOIL\image_helper.c">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\include\SOIL\SOIL.c">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\include\SOIL\stb_image_aug.c">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\include\SOIL\test_SOIL.cpp">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\texture.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sprite.cpp">
+      <Filter>graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Dependencies\include\ImGui\imgui_impl_glfw_gl3.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="..\Dependencies\include\GL\gl3w.h">
-      <Filter>gl3w</Filter>
+      <Filter>Dependencies\gl3w</Filter>
     </ClInclude>
     <ClInclude Include="..\Dependencies\include\GL\glcorearb.h">
-      <Filter>gl3w</Filter>
+      <Filter>Dependencies\gl3w</Filter>
     </ClInclude>
     <ClInclude Include="..\Dependencies\include\ImGui\imconfig.h">
-      <Filter>imgui</Filter>
+      <Filter>Dependencies\imgui</Filter>
     </ClInclude>
     <ClInclude Include="..\Dependencies\include\ImGui\imgui.h">
-      <Filter>imgui</Filter>
+      <Filter>Dependencies\imgui</Filter>
     </ClInclude>
     <ClInclude Include="..\Dependencies\include\ImGui\imgui_internal.h">
-      <Filter>imgui</Filter>
+      <Filter>Dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dependencies\include\SOIL\image_DXT.h">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dependencies\include\SOIL\image_helper.h">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dependencies\include\SOIL\SOIL.h">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dependencies\include\SOIL\stb_image_aug.h">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dependencies\include\SOIL\stbi_DDS_aug.h">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dependencies\include\SOIL\stbi_DDS_aug_c.h">
+      <Filter>Dependencies\SOIL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\texture.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\window.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sprite.h">
+      <Filter>graphics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,9 +1,4 @@
-﻿  gl3w.c
-  main.cpp
-  imgui_impl_glfw_gl3.cpp
-  imgui_draw.cpp
-  imgui_demo.cpp
-  imgui.cpp
-  Generating Code...
+﻿  window.cpp
+f:\#mygithub\noobgameengine\noobgameengine\src\window.cpp(201): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
   studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.exe
   studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.pdb (Full PDB)
