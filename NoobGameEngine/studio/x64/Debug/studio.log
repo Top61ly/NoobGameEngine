@@ -1,15 +1,4 @@
 ﻿  window.cpp
-f:\#mygithub\noobgameengine\noobgameengine\studio\src\window.cpp(201): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-  texture.cpp
-  sprite.cpp
-  main.cpp
-  imgui_draw.cpp
-  imgui_demo.cpp
-  imgui.cpp
-  Generating Code...
-SOIL.lib(image_DXT.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_DXT.obj)' or at 'F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(image_helper.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_helper.obj)' or at 'F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(SOIL.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(SOIL.obj)' or at 'F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(stb_image_aug.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(stb_image_aug.obj)' or at 'F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
+f:\#mygithub\noobgameengine\noobgameengine\studio\src\window.cpp(214): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
   studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.exe
   studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.pdb (Full PDB)

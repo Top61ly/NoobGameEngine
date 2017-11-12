@@ -20,7 +20,8 @@ namespace graphics
 
 		void OnGui() const;
 
-		void Render() const;
+		void BeginRender() const;
+		void EndRender() const;
 		bool Closed() const;
 	private:
 		bool Init();

@@ -16,6 +16,9 @@
     <Filter Include="graphics">
       <UniqueIdentifier>{6341012f-1a48-4ab1-bc89-cdc1535dcf61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{fbb8007c-2dfc-454a-8ed8-f77772dab229}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Dependencies\include\ImGui\imgui.cpp">
@@ -63,5 +66,10 @@
     <ClInclude Include="src\sprite.h">
       <Filter>graphics</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="G:\GOOGLE下载\Biplane.png">
+      <Filter>resources</Filter>
+    </Image>
   </ItemGroup>
 </Project>

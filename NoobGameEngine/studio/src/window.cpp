@@ -175,25 +175,38 @@ namespace graphics
 		glfwSetWindowPos(m_Window, xPos, yPos);
 
 		//GL Setup		
-		
-		//
+		glViewport(0, 0, width, height);
+		glMatrixMode(GL_PROJECTION);
+		glLoadIdentity();
+		glOrtho(0, width, 0, height, -10, 10);
+		glDepthRange(-10, 10);
+		glMatrixMode(GL_MODELVIEW);
+		//Alpha Blending
+		glEnable(GL_ALPHA_TEST);
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		return true;			
 	}
 
-	void Window::Render() const
+	void Window::BeginRender() const
 	{
 		glClearColor(0.5, 0.5, 0.5, 0.5);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 
+
+		ImGui::NewFrame();
 		OnGui();
+	}
+
+	void Window::EndRender() const
+	{
 		glfwSwapBuffers(m_Window);
 	}
 
 	void Window::Update() const
 	{
 		glfwPollEvents();
-		ImGui::NewFrame();
 	}
 
 	bool Window::Closed() const
