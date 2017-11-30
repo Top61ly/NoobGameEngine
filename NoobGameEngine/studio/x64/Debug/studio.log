@@ -1,4 +1,3 @@
-﻿  window.cpp
-f:\#mygithub\noobgameengine\noobgameengine\studio\src\window.cpp(214): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+﻿  texture.cpp
   studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.exe
   studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.pdb (Full PDB)
