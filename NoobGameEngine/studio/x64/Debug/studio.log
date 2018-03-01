@@ -1,15 +1,2 @@
-﻿  Mouse.cpp
-f:\#mygithub\noobgameengine\noobgameengine\studio\src\mouse.cpp(20): warning C4100: 'mods': unreferenced formal parameter
-f:\#mygithub\noobgameengine\noobgameengine\studio\src\mouse.cpp(20): warning C4100: 'window': unreferenced formal parameter
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  window.cpp
-  texture.cpp
-  sprite.cpp
-  main.cpp
-SOIL.lib(image_DXT.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_DXT.obj)' or at 'F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(image_helper.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_helper.obj)' or at 'F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(SOIL.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(SOIL.obj)' or at 'F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(stb_image_aug.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(stb_image_aug.obj)' or at 'F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-  studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.exe
-  studio.vcxproj -> F:\#MyGithub\NoobGameEngine\NoobGameEngine\x64\Debug\studio.pdb (Full PDB)
+﻿  studio.vcxproj -> F:\UnityProjectGit\NoobGameEngine\NoobGameEngine\x64\Debug\studio.exe
+  studio.vcxproj -> F:\UnityProjectGit\NoobGameEngine\NoobGameEngine\x64\Debug\studio.pdb (Full PDB)
