@@ -45,3 +45,9 @@ void Sprite::Render()
 
 	glDisable(GL_TEXTURE_2D);
 }
+
+void Sprite::SetPos(float x, float y)
+{
+	m_XPos = x;
+	m_YPos = y;
+}

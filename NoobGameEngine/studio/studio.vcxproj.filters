@@ -75,6 +75,9 @@
     <ClInclude Include="src\Mouse.h">
       <Filter>IO</Filter>
     </ClInclude>
+    <ClInclude Include="src\Keyboard.h">
+      <Filter>IO</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="G:\GOOGLE下载\Biplane.png">

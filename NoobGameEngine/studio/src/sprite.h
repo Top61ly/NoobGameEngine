@@ -18,6 +18,8 @@ public:
 	void Update();
 	void Render();
 
+	void SetPos(float x, float y);
+
 private:
 	Texture m_Texture;
 	float m_XPos;

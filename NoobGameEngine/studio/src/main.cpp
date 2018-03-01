@@ -1,5 +1,6 @@
 #include "window.h"
 #include "sprite.h"
+#include "Mouse.h"
 
 using namespace graphics;
 
@@ -13,6 +14,10 @@ int main()
 	{
 		mainWindow->Update();
 		testSprite.Update();
+
+		testSprite.SetPos((float)Mouse::GetMouseX(),(float)Mouse::GetMouseY());
+
+
 		mainWindow->BeginRender();
 		testSprite.Render();
 		mainWindow->EndRender();

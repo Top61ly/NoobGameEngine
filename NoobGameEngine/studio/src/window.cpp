@@ -1,5 +1,6 @@
 
 #include "window.h"
+#include "Mouse.h"
 
 namespace graphics
 {
@@ -164,6 +165,9 @@ namespace graphics
 		int width, height;
 		glfwGetFramebufferSize(m_Window, &width, &height);
 		glfwSwapInterval(1);
+
+		glfwSetCursorPosCallback(m_Window, Mouse::MousePosCallBack);
+		glfwSetMouseButtonCallback(m_Window, Mouse::MouseButtonCallBack);
 
 		setup(m_Window);
 
