@@ -1,6 +1,7 @@
 
 #include "window.h"
 #include "Mouse.h"
+#include "Keyboard.h"
 
 namespace graphics
 {
@@ -122,6 +123,8 @@ namespace graphics
 		glViewport(last_viewport[0], last_viewport[1], (GLsizei)last_viewport[2], (GLsizei)last_viewport[3]);
 	}
 
+	double Window::m_DeltaTime = 0;
+
 	Window::Window(const char *name, int width, int height)
 	{
 		m_Name = name;
@@ -168,6 +171,7 @@ namespace graphics
 
 		glfwSetCursorPosCallback(m_Window, Mouse::MousePosCallBack);
 		glfwSetMouseButtonCallback(m_Window, Mouse::MouseButtonCallBack);
+		glfwSetKeyCallback(m_Window, Keyboard::KeyboardCallback);
 
 		setup(m_Window);
 
@@ -189,6 +193,9 @@ namespace graphics
 		glEnable(GL_ALPHA_TEST);
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+		lastTime = glfwGetTime();
+
 		return true;			
 	}
 
@@ -208,8 +215,11 @@ namespace graphics
 		glfwSwapBuffers(m_Window);
 	}
 
-	void Window::Update() const
+	void Window::Update()
 	{
+		double nowTime = glfwGetTime();
+		m_DeltaTime = nowTime - lastTime;	
+		lastTime = nowTime;
 		glfwPollEvents();
 	}
 
@@ -217,4 +227,10 @@ namespace graphics
 	{
 		return glfwWindowShouldClose(m_Window);
 	}
+
+	const double Window::GetDeltaTime()
+	{
+		return m_DeltaTime;
+	}
+
 }
