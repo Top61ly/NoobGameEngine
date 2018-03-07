@@ -2,6 +2,7 @@
 #include "sprite.h"
 #include "Mouse.h"
 #include "Keyboard.h"
+#include "Vector3.h"
 
 using namespace graphics;
 
@@ -9,7 +10,9 @@ int main()
 {
 	Window* mainWindow = new Window("test", 1280, 720);
 
-	Sprite testSprite = Sprite("resources/Biplane.png",10,10);
+	Vector3 initPosition(10, 10, 0);
+
+	Sprite testSprite = Sprite("resources/Biplane.png",initPosition);
 
 	testSprite.SetScale(0.1);
 
@@ -39,22 +42,22 @@ int main()
 
 		if (Keyboard::Key(GLFW_KEY_W))
 		{
-			testSprite.MoveBy(0,speed*mainWindow->GetDeltaTime());
+			testSprite.MoveBy(0,speed*Window::GetDeltaTime());
 		}
 
 		if (Keyboard::Key(GLFW_KEY_S))
 		{
-			testSprite.MoveBy(0,-speed*mainWindow->GetDeltaTime());
+			testSprite.MoveBy(0,-speed*Window::GetDeltaTime());
 		}
 
 		if (Keyboard::Key(GLFW_KEY_A))
 		{
-			testSprite.MoveBy(-speed*mainWindow->GetDeltaTime(),0);
+			testSprite.MoveBy(-speed*Window::GetDeltaTime(),0);
 		}
 
 		if (Keyboard::Key(GLFW_KEY_D))
 		{
-			testSprite.MoveBy(speed*mainWindow->GetDeltaTime(),0);
+			testSprite.MoveBy(speed*Window::GetDeltaTime(),0);
 		}
 
 		mainWindow->BeginRender();

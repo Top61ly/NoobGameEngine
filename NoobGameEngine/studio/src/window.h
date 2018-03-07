@@ -13,7 +13,7 @@ namespace graphics
 		int m_Width, m_Height;
 		GLFWwindow *m_Window;
 		bool m_Closed;
-		static double m_DeltaTime;
+		static float m_DeltaTime;
 	public:
 		Window(const char *name, int width, int height);
 		~Window();
@@ -26,9 +26,9 @@ namespace graphics
 		bool Closed() const;
 
 	public:
-		static const double GetDeltaTime();
+		static const float GetDeltaTime();
 	private:
-		double lastTime;
+		float lastTime;
 		bool Init();
 	};
 }

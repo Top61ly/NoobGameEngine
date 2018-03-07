@@ -1,21 +1,27 @@
 #include "sprite.h"
 
 Sprite::Sprite()
-	:m_XPos(0), m_YPos(0), m_Rot(0)
+	: m_Rot(0)
 {	
 	m_Texture = Texture();
+	m_Position = Vector3();
+	m_Scale = Vector3(1, 1, 1);
 }
 
 Sprite::Sprite(string imagePath)
-	: m_XPos(0), m_YPos(0), m_Rot(0)
+	: m_Rot(0)
 {
 	m_Texture = Texture(imagePath);
+	m_Position = Vector3();
+	m_Scale = Vector3(1, 1, 1);
 }
 
-Sprite::Sprite(string imagePath, float xPos, float yPos)
-	:m_XPos(xPos),m_YPos(yPos),m_Rot(0)
+Sprite::Sprite(string imagePath,const Vector3& position)
+	:m_Rot(0)
 {
 	m_Texture = Texture(imagePath);
+	m_Position = position;
+	m_Scale = Vector3(1, 1, 1);
 }
 
 void Sprite::Update()
@@ -26,14 +32,14 @@ void Sprite::Update()
 
 void Sprite::MoveTo(float x, float y)
 {
-	m_XPos = x;
-	m_YPos = y;
+	m_Position.x = x;
+	m_Position.y = y;
 }
 
 void Sprite::MoveBy(float x, float y)
 {
-	m_XPos += x;
-	m_YPos += y;
+	m_Position.x += x;
+	m_Position.y += y;
 }
 
 void Sprite::RotateTo(float rot)
@@ -48,14 +54,14 @@ void Sprite::RotateBy(float rot)
 
 void Sprite::SetScale(float scale)
 {
-	m_XScale = scale;
-	m_YScale = scale;
+	m_Scale.x = scale;
+	m_Scale.y = scale;
 }
 
 void Sprite::SetScale(float x, float y)
 {
-	m_XScale = x;
-	m_YScale = y;
+	m_Scale.x = x;
+	m_Scale.y = y;
 }
 
 void Sprite::Render()
@@ -65,19 +71,19 @@ void Sprite::Render()
 	glLoadIdentity();
 
 	//Translate rotate scale
-	glTranslatef(m_XPos, m_YPos, 0);
+	glTranslatef(m_Position.x, m_Position.y, 0);
 	//glRotate
 	glRotatef(m_Rot, 0, 0, 1);
 	//glScale
-	glScalef(m_XScale, m_YScale, 1);
+	glScalef(m_Scale.x, m_Scale.y, m_Scale.z);
 
 	//Rendering
 	glColor4f(1,1,1,1);
 	glBegin(GL_QUADS);
-	glTexCoord2f(0, 0);	glVertex2f(m_XPos, m_YPos);
-	glTexCoord2f(1, 0);	glVertex2f(m_XPos+m_Texture.GetWidth(), m_YPos);
-	glTexCoord2f(1, 1);	glVertex2f(m_XPos + m_Texture.GetWidth(), m_YPos+m_Texture.GetHeight());
-	glTexCoord2f(0, 1);	glVertex2f(m_XPos, m_YPos + m_Texture.GetHeight());
+	glTexCoord2f(0, 0);	glVertex2i(m_Position.x, m_Position.y);
+	glTexCoord2f(1, 0);	glVertex2i(m_Position.x+m_Texture.GetWidth(), m_Position.y);
+	glTexCoord2f(1, 1);	glVertex2i(m_Position.x + m_Texture.GetWidth(), m_Position.y+m_Texture.GetHeight());
+	glTexCoord2f(0, 1);	glVertex2i(m_Position.x, m_Position.y + m_Texture.GetHeight());
 	glEnd();
 
 	glDisable(GL_TEXTURE_2D);

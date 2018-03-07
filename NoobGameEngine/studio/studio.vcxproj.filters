@@ -13,14 +13,23 @@
     <Filter Include="Dependencies\gl3w">
       <UniqueIdentifier>{82b92066-a007-4dd5-9105-86f3d0487e86}</UniqueIdentifier>
     </Filter>
-    <Filter Include="graphics">
-      <UniqueIdentifier>{6341012f-1a48-4ab1-bc89-cdc1535dcf61}</UniqueIdentifier>
-    </Filter>
     <Filter Include="resources">
       <UniqueIdentifier>{fbb8007c-2dfc-454a-8ed8-f77772dab229}</UniqueIdentifier>
     </Filter>
-    <Filter Include="IO">
+    <Filter Include="Engine">
+      <UniqueIdentifier>{5153e75e-abcb-422f-9820-b279ae450811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\graphics">
+      <UniqueIdentifier>{6341012f-1a48-4ab1-bc89-cdc1535dcf61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\IO">
       <UniqueIdentifier>{cd1b09a3-82dc-4003-8fd6-51271c5a2bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Math">
+      <UniqueIdentifier>{5963adb1-b0b7-487f-b66c-f34d3bb4eb75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Physics">
+      <UniqueIdentifier>{1c726fa9-f95d-4f2b-b050-d41b1ae05329}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -35,19 +44,22 @@
     </ClCompile>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\texture.cpp">
-      <Filter>graphics</Filter>
+      <Filter>Engine\graphics</Filter>
     </ClCompile>
     <ClCompile Include="src\window.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\sprite.cpp">
-      <Filter>graphics</Filter>
+      <Filter>Engine\graphics</Filter>
     </ClCompile>
     <ClCompile Include="src\Mouse.cpp">
-      <Filter>IO</Filter>
+      <Filter>Engine\IO</Filter>
     </ClCompile>
     <ClCompile Include="src\Keyboard.cpp">
-      <Filter>IO</Filter>
+      <Filter>Engine\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector3.cpp">
+      <Filter>Engine\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -67,19 +79,25 @@
       <Filter>Dependencies\imgui</Filter>
     </ClInclude>
     <ClInclude Include="src\texture.h">
-      <Filter>graphics</Filter>
+      <Filter>Engine\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\window.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\sprite.h">
-      <Filter>graphics</Filter>
+      <Filter>Engine\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\Mouse.h">
-      <Filter>IO</Filter>
+      <Filter>Engine\IO</Filter>
     </ClInclude>
     <ClInclude Include="src\Keyboard.h">
-      <Filter>IO</Filter>
+      <Filter>Engine\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector3.h">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rigidbody.h">
+      <Filter>Engine\Physics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

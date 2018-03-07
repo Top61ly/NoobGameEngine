@@ -123,7 +123,7 @@ namespace graphics
 		glViewport(last_viewport[0], last_viewport[1], (GLsizei)last_viewport[2], (GLsizei)last_viewport[3]);
 	}
 
-	double Window::m_DeltaTime = 0;
+	float Window::m_DeltaTime = 0;
 
 	Window::Window(const char *name, int width, int height)
 	{
@@ -194,7 +194,7 @@ namespace graphics
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-		lastTime = glfwGetTime();
+		lastTime =(float)glfwGetTime();
 
 		return true;			
 	}
@@ -217,7 +217,7 @@ namespace graphics
 
 	void Window::Update()
 	{
-		double nowTime = glfwGetTime();
+		float nowTime = (float)glfwGetTime();
 		m_DeltaTime = nowTime - lastTime;	
 		lastTime = nowTime;
 		glfwPollEvents();
@@ -228,7 +228,7 @@ namespace graphics
 		return glfwWindowShouldClose(m_Window);
 	}
 
-	const double Window::GetDeltaTime()
+	const float Window::GetDeltaTime()
 	{
 		return m_DeltaTime;
 	}

@@ -2,6 +2,7 @@
 
 #include "GLFW\glfw3.h"
 #include "texture.h"
+#include "Vector3.h"
 
 #include <iostream>
 #include <string>
@@ -13,7 +14,7 @@ class Sprite
 public:
 	Sprite();
 	Sprite(string imagePath);
-	Sprite(string imagePath, float xPos, float yPos);
+	Sprite(string imagePath, const Vector3& position);
 
 	void Update();
 	void Render();
@@ -28,10 +29,7 @@ public:
 	void SetScale(float x, float y);
 private:
 	Texture m_Texture;
-
-	float m_XPos;
-	float m_YPos;
+	Vector3 m_Position;
+	Vector3 m_Scale;
 	float m_Rot;
-	float m_XScale;
-	float m_YScale;
 };

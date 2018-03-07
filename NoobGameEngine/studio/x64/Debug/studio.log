@@ -1,12 +1,4 @@
-﻿  main.cpp
-f:\#mygithub\noobgameengine1\noobgameengine\studio\src\main.cpp(14): warning C4305: 'argument': truncation from 'double' to 'float'
-f:\#mygithub\noobgameengine1\noobgameengine\studio\src\main.cpp(42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-f:\#mygithub\noobgameengine1\noobgameengine\studio\src\main.cpp(47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-f:\#mygithub\noobgameengine1\noobgameengine\studio\src\main.cpp(52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-f:\#mygithub\noobgameengine1\noobgameengine\studio\src\main.cpp(57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-SOIL.lib(image_DXT.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_DXT.obj)' or at 'F:\#MyGithub\NoobGameEngine1\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(image_helper.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_helper.obj)' or at 'F:\#MyGithub\NoobGameEngine1\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(SOIL.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(SOIL.obj)' or at 'F:\#MyGithub\NoobGameEngine1\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
-SOIL.lib(stb_image_aug.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(stb_image_aug.obj)' or at 'F:\#MyGithub\NoobGameEngine1\NoobGameEngine\x64\Debug\SOIL.pdb'; linking object as if no debug info
+﻿  window.cpp
+f:\#mygithub\noobgameengine1\noobgameengine\studio\src\window.cpp(228): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
   studio.vcxproj -> F:\#MyGithub\NoobGameEngine1\NoobGameEngine\x64\Debug\studio.exe
   studio.vcxproj -> F:\#MyGithub\NoobGameEngine1\NoobGameEngine\x64\Debug\studio.pdb (Full PDB)

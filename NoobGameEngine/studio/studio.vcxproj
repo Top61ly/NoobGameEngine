@@ -126,6 +126,7 @@
     <ClCompile Include="src\Mouse.cpp" />
     <ClCompile Include="src\sprite.cpp" />
     <ClCompile Include="src\texture.cpp" />
+    <ClCompile Include="src\Vector3.cpp" />
     <ClCompile Include="src\window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -136,8 +137,10 @@
     <ClInclude Include="..\Dependencies\include\ImGui\imgui_internal.h" />
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\Mouse.h" />
+    <ClInclude Include="src\Rigidbody.h" />
     <ClInclude Include="src\sprite.h" />
     <ClInclude Include="src\texture.h" />
+    <ClInclude Include="src\Vector3.h" />
     <ClInclude Include="src\window.h" />
   </ItemGroup>
   <ItemGroup>
