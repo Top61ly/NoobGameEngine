@@ -27,9 +27,15 @@ public:
 
 	void SetScale(float scale);
 	void SetScale(float x, float y);
+
+	Vector3* GetPos();
+	float* GetRot();
+	Vector3* GetScale();
+	Vector3* GetSize();
 private:
 	Texture m_Texture;
 	Vector3 m_Position;
 	Vector3 m_Scale;
 	float m_Rot;
+	Vector3 m_Size;
 };

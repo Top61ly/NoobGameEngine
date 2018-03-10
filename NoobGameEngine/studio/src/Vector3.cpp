@@ -52,10 +52,10 @@ Vector3& Vector3::operator=(const Vector3& other)
 
 Vector3 Vector3::operator+(const Vector3& other)
 {
-	Vector3 ret(other);
-	ret.x += x;
-	ret.y += y;
-	ret.z += z;
+	Vector3 ret;
+	ret.x = x + other.x;
+	ret.y = y + other.y;
+	ret.z = z + other.z;
 	
 	return ret;
 }

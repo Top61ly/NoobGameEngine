@@ -4,8 +4,7 @@
 #include <stdio.h>
 #include <GLFW/glfw3.h>
 
-namespace graphics
-{
+
 	class Window
 	{
 	private:
@@ -31,4 +30,3 @@ namespace graphics
 		float lastTime;
 		bool Init();
 	};
-}

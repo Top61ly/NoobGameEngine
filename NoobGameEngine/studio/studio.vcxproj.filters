@@ -31,6 +31,12 @@
     <Filter Include="Engine\Physics">
       <UniqueIdentifier>{1c726fa9-f95d-4f2b-b050-d41b1ae05329}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Setting">
+      <UniqueIdentifier>{44308fb7-a12d-4391-94af-b73a08d0aef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flappy">
+      <UniqueIdentifier>{6f333083-6ef7-485b-b4cc-830209582348}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Dependencies\include\ImGui\imgui.cpp">
@@ -60,6 +66,12 @@
     </ClCompile>
     <ClCompile Include="src\Vector3.cpp">
       <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rigidbody.cpp">
+      <Filter>Engine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Flapper.cpp">
+      <Filter>flappy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +110,12 @@
     </ClInclude>
     <ClInclude Include="src\Rigidbody.h">
       <Filter>Engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Setting.h">
+      <Filter>Engine\Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Flapper.h">
+      <Filter>flappy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

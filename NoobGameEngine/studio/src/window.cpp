@@ -3,8 +3,7 @@
 #include "Mouse.h"
 #include "Keyboard.h"
 
-namespace graphics
-{
+
 	void setup(GLFWwindow* window);
 	void renderer(ImDrawData* draw_data);
 
@@ -233,4 +232,3 @@ namespace graphics
 		return m_DeltaTime;
 	}
 
-}

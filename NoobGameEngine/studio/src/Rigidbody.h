@@ -9,8 +9,10 @@ public:
 	Rigidbody();
 	~Rigidbody();
 
-private:
-	void Initilaize(float _friction, float _gravity, Vector3* _position, float _rot, Vector3* _scale);
+public:
+	void Initilaize(const float _friction, const float _gravity,
+		Vector3* _position, float* _rot, 
+		Vector3* _scale,Vector3* _size);
 
 	void Update();
 	void Render(const Vector3& c);
@@ -21,11 +23,12 @@ public:
 	bool isKinematic;
 	Vector3 velocity;
 
-private:
+protected:
 	Vector3* m_Position;
-	float* rot;
+	float* m_Rot;
 	Vector3* m_Scale;
+	Vector3* m_Size;
 
-	float gravity;
-	float friction;
+	float m_Gravity;
+	float m_Friction;
 };

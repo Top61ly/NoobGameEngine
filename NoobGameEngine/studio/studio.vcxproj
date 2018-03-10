@@ -121,9 +121,11 @@
     <ClCompile Include="..\Dependencies\include\ImGui\imgui.cpp" />
     <ClCompile Include="..\Dependencies\include\ImGui\imgui_demo.cpp" />
     <ClCompile Include="..\Dependencies\include\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="src\Flapper.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Mouse.cpp" />
+    <ClCompile Include="src\Rigidbody.cpp" />
     <ClCompile Include="src\sprite.cpp" />
     <ClCompile Include="src\texture.cpp" />
     <ClCompile Include="src\Vector3.cpp" />
@@ -135,9 +137,11 @@
     <ClInclude Include="..\Dependencies\include\ImGui\imconfig.h" />
     <ClInclude Include="..\Dependencies\include\ImGui\imgui.h" />
     <ClInclude Include="..\Dependencies\include\ImGui\imgui_internal.h" />
+    <ClInclude Include="src\Flapper.h" />
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\Mouse.h" />
     <ClInclude Include="src\Rigidbody.h" />
+    <ClInclude Include="src\Setting.h" />
     <ClInclude Include="src\sprite.h" />
     <ClInclude Include="src\texture.h" />
     <ClInclude Include="src\Vector3.h" />
